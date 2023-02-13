@@ -8,8 +8,8 @@ const CustomersPage = () => {
       customers
       children={
         <>
-          <CustomerList />
-          <CustomerList />
+          <CustomerList title={'Fernando da Silva'} />
+          <CustomerList title={'Augusta Soares'} />
         </>
       } />
 

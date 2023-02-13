@@ -15,12 +15,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function CustomerList() {
+export default function CustomerList({ title }) {
   return (
     <div className="lg:flex lg:items-center lg:justify-between mx-4 my-4">
       <div className="min-w-0 flex-1">
-        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-          Back End Developer
+        <h2 className="text-3xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+          {title}
         </h2>
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
           <div className="mt-2 flex items-center text-sm text-gray-500">
@@ -62,7 +62,7 @@ export default function CustomerList() {
           </button>
         </span>
 
-        <span className="sm:ml-3">
+        {/* <span className="sm:ml-3">
           <button
             type="button"
             className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -70,7 +70,7 @@ export default function CustomerList() {
             <CheckIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
             Publish
           </button>
-        </span>
+        </span> */}
 
         {/* Dropdown */}
         <Menu as="div" className="relative ml-3 sm:hidden">

@@ -8,10 +8,14 @@ import LoginComponent from "./pages/login";
 import { ProtectedRoute } from "./utils/protectedRoutes";
 
 export default function App() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(false)
 
   const handleLogin = () => setUser({ id: '1', name: 'robin' })
   const handleLogout = () => setUser(null)
+
+  if (localStorage.getItem('@UserLogged')) {
+    setUser(true)
+  }
 
   return (
     <BrowserRouter>
@@ -20,23 +24,23 @@ export default function App() {
         <Route path='/dashboard' element={
           <ProtectedRoute user={user}>
             <DashboardPage />
-          </ProtectedRoute>
-        } />
+          </ProtectedRoute>}
+        />
         <Route path='/customers' element={
           <ProtectedRoute user={user}>
             <CustomersPage />
-          </ProtectedRoute>
-        } />
+          </ProtectedRoute>}
+        />
         <Route path='/customers-new' element={
           <ProtectedRoute user={user}>
             <NewCustomerPage />
-          </ProtectedRoute>
-        } />
+          </ProtectedRoute>}
+        />
         <Route path='/customers-description' element={
           <ProtectedRoute user={user}>
             <CustomerDescriptionPage />
-          </ProtectedRoute>
-        } />
+          </ProtectedRoute>}
+        />
       </Routes>
     </BrowserRouter>
   )

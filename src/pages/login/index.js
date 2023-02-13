@@ -19,6 +19,7 @@ const LoginComponent = () => {
     const password = document.getElementById('password')
 
     if (email.value === 'rootuser@gmail.com' & password.value === 'DAx#1231u8d') {
+      localStorage.setItem('@UserLogged', email.value)
       navigate('/dashboard')
     } else {
       alert('Usuário ou Senha Incorretos')

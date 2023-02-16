@@ -15,15 +15,15 @@ const LoginComponent = () => {
 
   const userAuthentication = (e) => {
     e.preventDefault()
-    // const email = document.getElementById('email-address')
-    // const password = document.getElementById('password')
+    const email = document.getElementById('email-address')
+    const password = document.getElementById('password')
 
-    // if (email.value === 'rootuser@gmail.com' & password.value === 'DAx#1231u8d') {
-    //   localStorage.setItem('@UserLogged', email.value)
-    //   navigate('/dashboard')
-    // } else {
-    //   alert('Usuário ou Senha Incorretos')
-    // }
+    if (email.value === 'rootuser@gmail.com' & password.value === 'DAx#1231u8d') {
+      localStorage.setItem('@UserLogged', email.value)
+      navigate('/dashboard')
+    } else {
+      alert('Usuário ou Senha Incorretos')
+    }
   }
 
   return (

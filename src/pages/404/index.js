@@ -13,7 +13,7 @@ export default function Page404() {
             >
               Voltar para Dashboard
             </a>
-            <a href="#" className="text-sm font-semibold text-gray-900">
+            <a href="#" target='_blank' className="text-sm font-semibold text-gray-900">
               Falar com o Suporte <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

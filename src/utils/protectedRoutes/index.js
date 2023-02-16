@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom'
 
-const ProtectedRoute = ({ user, redirectPath = '/login', children }) => {
-  if (!user) {
+const ProtectedRoute = ({ redirectPath = '/login', children }) => {
+  if (localStorage.getItem('@UserLogged') === null) {
     return <Navigate to={redirectPath} replace />
   }
 

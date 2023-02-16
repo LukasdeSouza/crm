@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Page404 from "./pages/404";
 import CustomersPage from "./pages/customers";
 import CustomerDescriptionPage from "./pages/customers/description";
 import NewCustomerPage from "./pages/customers/new";
@@ -8,39 +9,44 @@ import LoginComponent from "./pages/login";
 import { ProtectedRoute } from "./utils/protectedRoutes";
 
 export default function App() {
-  const [user, setUser] = useState(false)
+  // const [user, setUser] = useState(false)
 
-  const handleLogin = () => setUser({ id: '1', name: 'robin' })
-  const handleLogout = () => setUser(null)
+  // const handleLogin = () => setUser({ id: '1', name: 'robin' })
+  // const handleLogout = () => setUser(null)
 
-  if (localStorage.getItem('@UserLogged')) {
-    setUser(true)
-  }
+  // if (localStorage.getItem('@UserLogged')) {
+  //   setUser(true)
+  // }
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/login' element={<LoginComponent />} />
         <Route path='/dashboard' element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <DashboardPage />
-          </ProtectedRoute>}
+          </ProtectedRoute>
+        }
         />
         <Route path='/customers' element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <CustomersPage />
-          </ProtectedRoute>}
+          </ProtectedRoute>
+        }
         />
         <Route path='/customers-new' element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <NewCustomerPage />
-          </ProtectedRoute>}
+          </ProtectedRoute>
+        }
         />
         <Route path='/customers-description' element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <CustomerDescriptionPage />
-          </ProtectedRoute>}
+          </ProtectedRoute>
+        }
         />
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   )

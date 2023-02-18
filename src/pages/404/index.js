@@ -11,7 +11,7 @@ export default function Page404() {
               href="/dashboard"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Voltar para Dashboard
+              Voltar para Página Inicial
             </a>
             <a href="#" target='_blank' className="text-sm font-semibold text-gray-900">
               Falar com o Suporte <span aria-hidden="true">&rarr;</span>

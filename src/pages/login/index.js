@@ -5,6 +5,7 @@ import RootStoreContext from '../../rootStore'
 import { customerInfos } from '../../queries/customers'
 import { client } from '../../services/graphql.service'
 import { useNavigate } from 'react-router-dom'
+import { ROOT_PASSWORD, ROOT_USER } from '../../utils/constants'
 
 
 const LoginComponent = () => {
@@ -18,7 +19,7 @@ const LoginComponent = () => {
     const email = document.getElementById('email-address')
     const password = document.getElementById('password')
 
-    if (email.value === 'rootuser@gmail.com' & password.value === 'DAx#1231u8d') {
+    if (email.value === ROOT_USER & password.value === ROOT_PASSWORD) {
       localStorage.setItem('@UserLogged', email.value)
       navigate('/dashboard')
     } else {

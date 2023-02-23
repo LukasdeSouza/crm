@@ -65,14 +65,6 @@ const LoginComponent = () => {
             </div>
           </div>
 
-          <div className="flex items-center">
-            <div className="text-sm">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Esqueceu sua senha?
-              </a>
-            </div>
-          </div>
-
           <div>
             <button
               type="submit"

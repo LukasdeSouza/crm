@@ -1,5 +1,6 @@
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { useNavigate } from 'react-router-dom'
+import LoginButton from '../../components/loginButton'
 import { ROOT_PASSWORD, ROOT_USER } from '../../utils/constants'
 
 
@@ -76,6 +77,7 @@ const LoginComponent = () => {
               </span>
               Entrar
             </button>
+            <LoginButton />
           </div>
         </form>
       </div>

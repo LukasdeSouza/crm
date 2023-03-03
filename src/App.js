@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Profile from "./components/profile";
 import Page404 from "./pages/404";
 import CustomersPage from "./pages/customers";
 import CustomerDescriptionPage from "./pages/customers/description";
@@ -38,7 +39,9 @@ export default function App() {
           </ProtectedRoute>
         }
         />
+        {/* <Route path='/profile' element={<Profile />} /> */}
         <Route path='*' element={<Page404 />} />
+
       </Routes>
     </BrowserRouter>
   )

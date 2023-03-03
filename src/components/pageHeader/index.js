@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useNavigate } from 'react-router-dom'
 import { HomeModernIcon } from '@heroicons/react/20/solid'
+import LogoutButton from '../logoutButton'
 
 const user = {
   name: 'Tom Cook',
@@ -33,6 +34,7 @@ export default function PageHeader({ title, children, customers }) {
   return (
     <>
       <div className="min-h-full">
+        <LogoutButton />
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>

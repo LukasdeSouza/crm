@@ -2,27 +2,27 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Sugira uma alteração',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'Toda mudança para melhor é bem-vinda! Caso sua sugestão seja válida, sera aprovada.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Segurança',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Sabemos da segurança dos dados, por isso mantemos todas as informações de clientes protegidas e acessíveis.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Atualização',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Uma vez as informações gravadas no nosso banco de dados, podem ser atualizadas. Ou seja, os dados dos seus clientes serão sempre atuais.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Individualidade',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Seu CRM pode ser personalizado, caso tenha interesse, basta entrar em contato conosco para mais informações.',
     icon: FingerPrintIcon,
   },
 ]
@@ -34,11 +34,10 @@ export default function Grid2x2Section() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Tudo que você precisa em um CRM
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Sabemos que o CRM ideal deve preencher as necessidades da sua empresa, seja elas quais for. Cada empresa tem sua necessidade, sabendo disso, nosso CRM é aberto (Open Source) aceitando novas mudanças dos desenvolvedores e sugestões das empresas e usuários
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

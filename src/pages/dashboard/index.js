@@ -4,7 +4,7 @@ import BasicChart from '../../components/charts'
 const DashboardPage = () => {
   return (
     <PageHeader
-      title={'Dashboard'}
+      title={'Dashboard CRM Free'}
       children={
         <BasicChart />
       }

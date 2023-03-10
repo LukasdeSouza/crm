@@ -77,6 +77,7 @@ const BasicChart = () => <div>
   <HighchartsReact
     highcharts={Highcharts}
     options={options}
+    sx={{ width: 100 }}
   />
 </div>
 

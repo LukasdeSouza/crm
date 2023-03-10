@@ -70,7 +70,7 @@ export default function HeroSection() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" onClick={() => navigate('/auth/login')} className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Login <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -108,7 +108,7 @@ export default function HeroSection() {
                     href="#"
                     className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
                   >
-                    Log in
+                    Login
                   </a>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function HeroSection() {
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Seja um apoiador deste projeto.{' '}
-                <a href="#" className="font-semibold text-indigo-600">
+                <a href="https://www.vakinha.com.br/vaquinha/projeto-open-source-seek-jobs" target={"_blank"} className="font-semibold text-indigo-600">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">&rarr;</span>
                 </a>
@@ -137,7 +137,7 @@ export default function HeroSection() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/auth/login"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Quero usar

@@ -77,7 +77,6 @@ const LoginComponent = () => {
               </span>
               Entrar
             </button>
-            {/* <LoginButton /> */}
           </div>
         </form>
       </div>

@@ -14,14 +14,13 @@ const user = {
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', current: true },
   { name: 'Clientes', href: '/customers', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Projetos', href: '#', current: false },
+  { name: 'Calendário', href: '#', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Seu Perfil', href: '#' },
+  // { name: 'Settings', href: '#' },
+  { name: 'Sair', href: '#' },
 ]
 
 function classNames(...classes) {

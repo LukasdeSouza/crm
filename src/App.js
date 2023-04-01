@@ -35,7 +35,13 @@ export default function App() {
           </ProtectedRoute>
         }
         />
-        <Route path='/customers-description' element={
+        <Route path='/customers-edit' element={
+          <ProtectedRoute>
+            <NewCustomerPage />
+          </ProtectedRoute>
+        }
+        />
+        <Route path='/customers-view' element={
           <ProtectedRoute>
             <CustomerDescriptionPage />
           </ProtectedRoute>

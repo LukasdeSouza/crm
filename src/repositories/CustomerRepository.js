@@ -9,6 +9,13 @@ class CustomerRepository {
     })
   }
 
+  async createCustomer(customer) {
+    return await client.mutate({
+      // mutation: createCustomer,
+      variables: { customer },
+    })
+  }
+
 }
 
 export default CustomerRepository

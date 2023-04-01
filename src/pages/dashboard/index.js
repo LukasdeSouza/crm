@@ -5,9 +5,9 @@ const DashboardPage = () => {
   return (
     <PageHeader
       title={'Dashboard CRM Free'}
-      children={
-        <BasicChart />
-      }
+    // children={
+    //   <BasicChart />
+    // }
     />
   )
 }
